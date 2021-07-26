@@ -26,13 +26,13 @@ const routes = [
     name: "Dashboard",
     component: Dashboard,
     children: [
-      {
-        path: "/dashboard/home",
-        component: AccountHome,
-      },
+      // {
+      //   path: "/dashboard/home",
+      //   component: AccountHome
+      // },
       {
         path: "/dashboard/settings",
-        component: Settings,
+        component: Settings
       }
     ]
   }
