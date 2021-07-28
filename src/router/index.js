@@ -3,6 +3,9 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Dashboard from "../views/Dashboard.vue";
 import Settings from "../views/Settings.vue";
+import AccountHome from "../views/AccountHome.vue";
+import Pricing from "../views/Pricing.vue";
+import Contact from "../views/Contact.vue";
 
 Vue.use(VueRouter);
 
@@ -22,14 +25,25 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
+    path: "/pricing",
+    name: "Pricing",
+    component: Pricing
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact
+  },
+  {
     path: "/dashboard",
     name: "Dashboard",
     component: Dashboard,
     children: [
-      // {
-      //   path: "/dashboard/home",
-      //   component: AccountHome
-      // },
+      {
+        path: "/dashboard/home",
+        component: AccountHome,
+        alias: "/dashboard"
+      },
       {
         path: "/dashboard/settings",
         component: Settings
