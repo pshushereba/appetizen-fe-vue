@@ -73,7 +73,10 @@
       </div>
     </div>
     <main class="flex-1 relative pb-8 z-0 overflow-y-auto">
-      <router-view />
+      <!-- <transition> -->
+        <router-view />
+      <!-- </transition> -->
+      
     </main>
   </div>
 </div>

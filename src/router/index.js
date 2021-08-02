@@ -40,9 +40,9 @@ const routes = [
     component: Dashboard,
     children: [
       {
-        path: "/dashboard/home",
+        path: "",
         component: AccountHome,
-        alias: "/dashboard"
+        //alias: "/dashboard"
       },
       {
         path: "/dashboard/settings",
