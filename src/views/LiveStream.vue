@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <h2>Live Stream</h2>
   </div>
 </template>
 

@@ -2,10 +2,14 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Dashboard from "../views/Dashboard.vue";
+import LiveStream from "../views/LiveStream.vue";
 import Settings from "../views/Settings.vue";
 import AccountHome from "../views/AccountHome.vue";
 import Pricing from "../views/Pricing.vue";
 import Contact from "../views/Contact.vue";
+import Login from "../views/Login.vue";
+import Register from "../views/Register.vue";
+
 
 Vue.use(VueRouter);
 
@@ -33,6 +37,16 @@ const routes = [
     path: "/contact",
     name: "Contact",
     component: Contact
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: Register
   },
   {
     path: "/dashboard",
