@@ -61,6 +61,10 @@ const routes = [
       {
         path: "/dashboard/settings",
         component: Settings
+      },
+      {
+        path: "/dashboard/live",
+        component: LiveStream
       }
     ]
   }
