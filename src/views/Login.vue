@@ -38,7 +38,7 @@
         >
           Log in to your account
         </h1>
-        <form class="mt-6" action="#" method="POST">
+        <form class="mt-6" @submit.prevent="login">
           <div>
             <label
               class="
