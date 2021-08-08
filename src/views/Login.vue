@@ -288,7 +288,7 @@ export default {
   methods: {
     login: function () {
       this.$store
-        .dispatch("login", { username: this.username, password: this.password })
+        .dispatch("login", { email: this.email, password: this.password })
         .then(() => this.$router.push("/dashboard"))
         .catch((err) => console.log(err));
     },

@@ -9,6 +9,7 @@ import Pricing from "../views/Pricing.vue";
 import Contact from "../views/Contact.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
+import Profile from "../views/Profile.vue";
 
 
 Vue.use(VueRouter);
@@ -56,7 +57,6 @@ const routes = [
       {
         path: "",
         component: AccountHome,
-        //alias: "/dashboard"
       },
       {
         path: "/dashboard/settings",
@@ -67,6 +67,10 @@ const routes = [
         component: LiveStream
       }
     ]
+  },
+  {
+    path: "/profile",
+    component: Profile
   }
 ];
 
