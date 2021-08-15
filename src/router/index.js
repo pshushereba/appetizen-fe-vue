@@ -56,11 +56,19 @@ const routes = [
     children: [
       {
         path: "",
+        name: "AccountHome",
         component: AccountHome,
+        meta: {
+          requiresAuth: true,
+        }
       },
       {
         path: "/dashboard/settings",
-        component: Settings
+        name: "Settings",
+        component: Settings,
+        meta: {
+          requiresAuth: true,
+        }
       },
       {
         path: "/dashboard/live",
@@ -70,7 +78,11 @@ const routes = [
   },
   {
     path: "/profile",
-    component: Profile
+    name: "Profile",
+    component: Profile,
+    meta: {
+      requiresAuth: true,
+    }
   }
 ];
 
@@ -79,5 +91,20 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 });
+
+// router.beforeEach((to, from, next) => {
+//   if (to.matched.some((record) => record.meta.requiresAuth)) {
+//     if (this.$store.getters.isLoggedIn) {
+//       next();
+//       return;
+//     }
+//     next({
+//       path: '/login',
+//       // query: { redirect: to.fullPath }
+//     });
+//   } else {
+//     next();
+//   }
+// });
 
 export default router;

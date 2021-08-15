@@ -14,10 +14,14 @@
     "autoprefixer": "^9",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "peerjs": "^1.3.2",
     "postcss": "^7",
+    "socket.io-client": "^4.1.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^2.6.11",
+    "vue-peerjs": "^0.3.0",
     "vue-router": "^3.5.1",
+    "vue-socket.io-extended": "^4.2.0",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
