@@ -10,6 +10,7 @@ import Contact from "../views/Contact.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
 import Profile from "../views/Profile.vue";
+import Explore from "../views/Explore.vue";
 
 
 Vue.use(VueRouter);
@@ -72,7 +73,13 @@ const routes = [
       },
       {
         path: "/dashboard/live",
+        name: "LiveStream",
         component: LiveStream
+      },
+      {
+        path: "/dashboard/explore",
+        name: "Explore",
+        component: Explore
       }
     ]
   },

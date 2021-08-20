@@ -366,7 +366,8 @@
                 Go Live
               </router-link>
 
-              <a
+              <router-link
+                to="/dashboard/explore"
                 href="#"
                 class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
               >
@@ -387,7 +388,7 @@
                   />
                 </svg>
                 Explore
-              </a>
+              </router-link>
 
               <a
                 href="#"
