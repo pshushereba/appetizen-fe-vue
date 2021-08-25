@@ -3,12 +3,12 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./assets/tailwind.css";
-import VueSocketIOExt from 'vue-socket.io-extended';
-import { io } from 'socket.io-client';
+// import VueSocketIOExt from 'vue-socket.io-extended';
+// import { io } from 'socket.io-client';
 
-const socket = io('https://appetizen-media.herokuapp.com/');
+// const socket = io('https://appetizen-media.herokuapp.com/');
 
-Vue.use(VueSocketIOExt, socket);
+// Vue.use(VueSocketIOExt, socket);
 
 Vue.config.productionTip = false;
 
