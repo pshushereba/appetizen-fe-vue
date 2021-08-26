@@ -10,6 +10,9 @@ import Contact from "../views/Contact.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
 import Profile from "../views/Profile.vue";
+import ProfileDetails from "../views/ProfileDetails.vue";
+import ProfileVideos from "../views/ProfileVideos.vue";
+import ProfilePhotos from "../views/ProfilePhotos.vue";
 import Explore from "../views/Explore.vue";
 
 
@@ -89,7 +92,22 @@ const routes = [
     component: Profile,
     meta: {
       requiresAuth: true,
-    }
+    },
+    children: [
+      {path: "",
+      name: "ProfileDetails",
+      component: ProfileDetails},
+      {
+        path: "/profile/photos",
+        name: "ProfilePhotos",
+        component: ProfilePhotos
+      },
+      {
+        path: "/profile/videos",
+        name: "ProfileVideos",
+        component: ProfileVideos
+      }
+    ]
   }
 ];
 
